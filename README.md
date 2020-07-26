@@ -1,22 +1,30 @@
 # deploy.example
 
-A Clojure library designed to ... well, that part is up to you.
+Test case for clojars deployment
 
 ## Usage
 
-FIXME
+```bash
+$ lein repl
+```
 
-## License
+```clojure
+> (use 'example)
 
-Copyright © 2020 FIXME
+> (sample-deploy)
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+;; -------------------
+;; DEPLOYING ARTIFACTS
+;; -------------------
+;;   deploying     hara/base:jar                                     3.0.13                         
+;;   deployed      hara/base:jar                                     3.0.13    [clojars]  (5.86s, 95180 bytes)
+;;   deploying     hara/base:pom                                     3.0.13                         
+;;   deployed      hara/base:pom                                     3.0.13    [clojars]  (4.69s, 0 bytes)
+;;   deploying     hara/base:pom.asc                                 3.0.13                         
+;;   deployed      hara/base:pom.asc                                 3.0.13    [clojars]  (6.25s, 0 bytes)
+;;   deploying     hara/base:jar.asc                                 3.0.13                         
+;;   deployed      hara/base:jar.asc                                 3.0.13    [clojars]  (2.76s, 454 bytes)
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+```
+
+
